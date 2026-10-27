@@ -1,0 +1,34 @@
+{
+    "train": {
+        "input_file": "D:\\RTNID Project\\RTNID_Dataset.csv",
+        "original_rows": 79991,
+        "cleaned_rows": 77033,
+        "duplicates_found": 2958,
+        "duplicates_removed": 2958,
+        "invalid_numeric_values": {},
+        "infinite_values_replaced": {
+            "Flow Bytes/s": 51,
+            "Flow Packets/s": 85
+        },
+        "placeholder_values_replaced": 34,
+        "missing_values_after_cleaning": {
+            "Flow Bytes/s": 85,
+            "Flow Packets/s": 85
+        },
+        "label_column": "Label",
+        "categorical_columns": [],
+        "label_distribution_before": {
+            "BENIGN": 63627,
+            "DoS slowloris": 5796,
+            "DoS Slowhttptest": 5499,
+            "DoS Hulk": 5069
+        },
+        "label_distribution_after": {
+            "BENIGN": 62093,
+            "DoS slowloris": 5385,
+            "DoS Slowhttptest": 5228,
+            "DoS Hulk": 4327
+        },
+        "note": "Remaining NaNs: impute using TRAIN statistics only. Do not use label/difficulty_level as features. Encoding and scaling belong to the preprocessing stage."
+    }
+}
